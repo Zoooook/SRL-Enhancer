@@ -30,28 +30,23 @@ $(function(){
 
     $(".ls_column:hidden").remove();
 
-    $("#streamTemplate").replaceWith("<script id=\"streamTemplate\" type=\"text/x-jquery-tmpl\"><div class=\"ls_namebar\"><table><tr><td colspan=\"2\"><div class=\"ls_name\"><div class=\"ls_padder\"><strong><a href=\"/profiles/#!/${srlname}/1\">${srlname}</a></strong></div></div></td><td class=\"ls_icons\"><a class=\"chatIcon\" title=\"Popout Chat\" onClick=\"window.open('http://www.twitch.tv/chat/embed?channel=${twitch}&popout_chat=true','_blank','width=400,height=550,scrollbars=no,toolbar=no')\"><span>[chat]</span></a></td><td class=\"ls_icons\"><a class=\"collapseIcon ${collapseid}\" title=\"Hide/Show\"><span>[collapse]</span></a></td><td class=\"ls_icons\"><a class=\"closeStreamIcon ${closestreamid}\" title=\"Remove Stream\"><span>[remove]</span></a></td></tr><tr><td><div class=\"ls_name\"></div></td><td class=\"ls_icons\"><a class=\"moveLeftIcon\" title=\"Move stream left\"><span>[moveLeft]</span></a></td><td class=\"ls_icons\"><a class=\"moveUpIcon\" title=\"Move stream up\"><span>[moveUp]</span></a></td><td class=\"ls_icons\"><a class=\"moveDownIcon\" title=\"Move stream down\"><span>[moveDown]</span></a></td><td class=\"ls_icons\"><a class=\"moveRightIcon\" title=\"Move stream right\"><span>[moveRight]</span></a></td></tr></table></div><div class=\"ls_objectContainer\"><img src=\"http://cdn.speedrunslive.com/images/aspect-ratio-16-9.png\" /><div><object type=\"application/x-shockwave-flash\" id=\"live_embed_player_flash\" data=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel=${twitch}\" bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowScriptAccess\" value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param name=\"movie\" value=\"http://www.twitch.tv/widgets/live_embed_player.swf\" /><param name=\"flashvars\" value=\"hostname=www.twitch.tv&channel=${twitch}&auto_play=false&start_volume=25\" /></object></div></div></script>");
-
-    // <script id=\"streamTemplate\" type=\"text/x-jquery-tmpl\">
-    //     <div class="ls_namebar">
-    //         <table><tr><td colspan="2"><div class="ls_name"><div class="ls_padder"><strong><a href="/profiles/#!/${srlname}/1">${srlname}</a></strong></div></div>
-    //             </td><td class="ls_icons"><a class="chatIcon" title="Popout Chat" onClick="window.open('http://www.twitch.tv/chat/embed?channel=${twitch}&popout_chat=true','_blank','width=400,height=550,scrollbars=no,toolbar=no')"><span>[chat]</span></a>
-    //             </td><td class="ls_icons"><a class="collapseIcon ${collapseid}" title="Hide/Show"><span>[collapse]</span></a>
-    //             </td><td class="ls_icons"><a class="closeStreamIcon ${closestreamid}" title="Remove Stream"><span>[remove]</span></a>
-    //         </td></tr><tr><td><div class="ls_name"></div>
-    //             </td><td class="ls_icons"><a class="moveLeftIcon" title="Move stream left"><span>[moveLeft]</span></a>
-    //             </td><td class="ls_icons"><a class="moveUpIcon" title="Move stream up"><span>[moveUp]</span></a>
-    //             </td><td class="ls_icons"><a class="moveDownIcon" title="Move stream down"><span>[moveDown]</span></a>
-    //             </td><td class="ls_icons"><a class="moveRightIcon" title="Move stream right"><span>[moveRight]</span></a>
-    //         </td></tr></table>
-    //     </div>
-    //     <div class="ls_objectContainer">
-    //         <img src="http://cdn.speedrunslive.com/images/aspect-ratio-16-9.png" />
-    //         <div>
-    //             <object type="application/x-shockwave-flash" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=${twitch}" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=${twitch}&auto_play=false&start_volume=25" /></object>
-    //         </div>
-    //     </div>
-    // </script>
+    $("#streamTemplate").replaceWith("<script id=\"streamTemplate\" type=\"text/x-jquery-tmpl\">"
+                                        +"<div class=\"ls_namebar\">"
+                                            +"<table><tr><td colspan=\"2\"><div class=\"ls_name\"><div class=\"ls_padder\"><strong><a href=\"/profiles/#!/${srlname}/1\">${srlname}</a></strong></div></div>"
+                                                +"</td><td class=\"ls_icons\"><a class=\"chatIcon\" title=\"Popout Chat\" onClick=\"window.open('http://www.twitch.tv/chat/embed?channel=${twitch}&popout_chat=true','_blank','width=400,height=550,scrollbars=no,toolbar=no')\"><span>[chat]</span></a>"
+                                                +"</td><td class=\"ls_icons\"><a class=\"collapseIcon ${collapseid}\" title=\"Hide/Show\"><span>[collapse]</span></a>"
+                                                +"</td><td class=\"ls_icons\"><a class=\"closeStreamIcon ${closestreamid}\" title=\"Remove Stream\"><span>[remove]</span></a>"
+                                            +"</td></tr><tr><td><div class=\"ls_belowName\"></div>"
+                                                +"</td><td class=\"ls_icons\"><a class=\"moveLeftIcon\" title=\"Move stream left\"><span>[moveLeft]</span></a>"
+                                                +"</td><td class=\"ls_icons\"><a class=\"moveUpIcon\" title=\"Move stream up\"><span>[moveUp]</span></a>"
+                                                +"</td><td class=\"ls_icons\"><a class=\"moveDownIcon\" title=\"Move stream down\"><span>[moveDown]</span></a>"
+                                                +"</td><td class=\"ls_icons\"><a class=\"moveRightIcon\" title=\"Move stream right\"><span>[moveRight]</span></a>"
+                                            +"</td></tr></table>"
+                                        +"</div><div class=\"ls_objectContainer\">"
+                                            +"<img src=\"http://cdn.speedrunslive.com/images/aspect-ratio-16-9.png\"/>"
+                                            +"<div><object type=\"application/x-shockwave-flash\" id=\"live_embed_player_flash\" data=\"http://www.twitch.tv/widgets/live_embed_player.swf?channel=${twitch}\" bgcolor=\"#000000\"><param name=\"allowFullScreen\" value=\"true\" /><param name=\"allowScriptAccess\" value=\"always\" /><param name=\"allowNetworking\" value=\"all\" /><param name=\"movie\" value=\"http://www.twitch.tv/widgets/live_embed_player.swf\" /><param name=\"flashvars\" value=\"hostname=www.twitch.tv&channel=${twitch}&auto_play=false&start_volume=25\" /></object></div>"
+                                        +"</div>"
+                                    +"</script>");
 });
 
 function streamsPerRow(num){
