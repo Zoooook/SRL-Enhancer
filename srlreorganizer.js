@@ -1,3 +1,8 @@
+// float icons so they drop to 2nd level
+// move empty columns to the end
+// when only one item in each column, just move one column instead of both items
+// port to firefox
+
 $(function(){
     $("#ls_sidebar").append("<div id=\"ls_morecontrols\"></div>");
     $("#ls_sidebar").append("<div id=\"ls_extracontrols\" style=\"width:50%;margin-left:auto;margin-right:auto\"></div>");
