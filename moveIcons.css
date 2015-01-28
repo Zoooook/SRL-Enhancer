@@ -13,6 +13,21 @@
   width: 100%;
 }
 
+.moveButtonSpacer {
+  background-color: #7c0605;
+  background-position: -9px 0;
+  border-color: #900706 #000000 #000000 #860605;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+
+  background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#7c0605), to(#5a0404));
+  background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -webkit-linear-gradient(top, #7c0605, #5a0404);
+  background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -moz-linear-gradient(top, #7c0605, #5a0404);
+  background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #7c0605, #5a0404);
+  background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #7c0605, #5a0404);
+  background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #7c0605, #5a0404);
+}
+
 .moveLeftIcon {
   background-color: #7c0605;
   background-position: -9px 0;
@@ -26,7 +41,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #7c0605, #5a0404);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveLeft.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVBjTY2DAAxgdEGxWJLZoAIIdGhoCVx4aGgpXjsQWJYKNrB7ZHGTzUexFdg+yO6kFmBoQbC4kttYCBHvVqhVw5atWrYIrR2JrEcFGVo9sDrL5KPYiuwfZnSQAAN1CIUMfhgwaAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTAxLTI4VDAwOjQyOjU1KzAxOjAwV3XCxgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wMS0yOFQwMDo0Mjo1NSswMTowMCYoenoAAAAASUVORK5CYII=), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveLeftIcon:hover {
   background-color: #c01614;
@@ -42,7 +57,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveLeft.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVBjTY2DAAxgdEGxWJLZoAIIdGhoCVx4aGgpXjsQWJYKNrB7ZHGTzUexFdg+yO6kFmBoQbC4kttYCBHvVqhVw5atWrYIrR2JrEcFGVo9sDrL5KPYiuwfZnSQAAN1CIUMfhgwaAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTAxLTI4VDAwOjQyOjU1KzAxOjAwV3XCxgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wMS0yOFQwMDo0Mjo1NSswMTowMCYoenoAAAAASUVORK5CYII=), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveLeftIcon:active {
   background-color: #5d0504;
@@ -60,7 +75,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #5d0504, #3b0302);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveLeft.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVBjTY2DAAxgdEGxWJLZoAIIdGhoCVx4aGgpXjsQWJYKNrB7ZHGTzUexFdg+yO6kFmBoQbC4kttYCBHvVqhVw5atWrYIrR2JrEcFGVo9sDrL5KPYiuwfZnSQAAN1CIUMfhgwaAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTAxLTI4VDAwOjQyOjU1KzAxOjAwV3XCxgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wMS0yOFQwMDo0Mjo1NSswMTowMCYoenoAAAAASUVORK5CYII=), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveLeftIcon span {
   display: none;
@@ -78,7 +93,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #7c0605, #5a0404);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveUp.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVBjTrc6xDYAwDETRgJQmPUswBSNQ5PZhFMropkznuyJCsoSrV3xbLuVjtluuXT4gA1fkQCxUoCsHVvbe76Tt//w1+yu3IZ+UySdyMhYaOZSTK3vvd9L2fxIzAaoNJFKsWyAPAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTAxLTI4VDAwOjQzOjIxKzAxOjAwRj2E8gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wMS0yOFQwMDo0MzoyMSswMTowMDdgPE4AAAAASUVORK5CYII=), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveUpIcon:hover {
   background-color: #c01614;
@@ -94,7 +109,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveUp.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVBjTrc6xDYAwDETRgJQmPUswBSNQ5PZhFMropkznuyJCsoSrV3xbLuVjtluuXT4gA1fkQCxUoCsHVvbe76Tt//w1+yu3IZ+UySdyMhYaOZSTK3vvd9L2fxIzAaoNJFKsWyAPAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTAxLTI4VDAwOjQzOjIxKzAxOjAwRj2E8gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wMS0yOFQwMDo0MzoyMSswMTowMDdgPE4AAAAASUVORK5CYII=), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveUpIcon:active {
   background-color: #5d0504;
@@ -112,7 +127,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #5d0504, #3b0302);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveUp.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVBjTrc6xDYAwDETRgJQmPUswBSNQ5PZhFMropkznuyJCsoSrV3xbLuVjtluuXT4gA1fkQCxUoCsHVvbe76Tt//w1+yu3IZ+UySdyMhYaOZSTK3vvd9L2fxIzAaoNJFKsWyAPAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTAxLTI4VDAwOjQzOjIxKzAxOjAwRj2E8gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wMS0yOFQwMDo0MzoyMSswMTowMDdgPE4AAAAASUVORK5CYII=), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveUpIcon span {
   display: none;
@@ -130,7 +145,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #7c0605, #5a0404);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveDown.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABZSURBVBjTrY6xCQAhFENVsLG/JZziRrAw+zjKlZIpr4zCR1BM9YrHI84t9kAMvKfsgaIkYHEEquVPzfFPrGIv/doyxWQ75UB+SpIWJ7Jb/tQc/6QuDtJ39gNgoyRShJus8QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wMS0yOFQwMDo0MjozNSswMTowMJEay0EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDEtMjhUMDA6NDI6MzUrMDE6MDDgR3P9AAAAAElFTkSuQmCC), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveDownIcon:hover {
   background-color: #c01614;
@@ -146,7 +161,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveDown.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABZSURBVBjTrY6xCQAhFENVsLG/JZziRrAw+zjKlZIpr4zCR1BM9YrHI84t9kAMvKfsgaIkYHEEquVPzfFPrGIv/doyxWQ75UB+SpIWJ7Jb/tQc/6QuDtJ39gNgoyRShJus8QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wMS0yOFQwMDo0MjozNSswMTowMJEay0EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDEtMjhUMDA6NDI6MzUrMDE6MDDgR3P9AAAAAElFTkSuQmCC), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveDownIcon:active {
   background-color: #5d0504;
@@ -164,7 +179,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #5d0504, #3b0302);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveDown.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABZSURBVBjTrY6xCQAhFENVsLG/JZziRrAw+zjKlZIpr4zCR1BM9YrHI84t9kAMvKfsgaIkYHEEquVPzfFPrGIv/doyxWQ75UB+SpIWJ7Jb/tQc/6QuDtJ39gNgoyRShJus8QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wMS0yOFQwMDo0MjozNSswMTowMJEay0EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDEtMjhUMDA6NDI6MzUrMDE6MDDgR3P9AAAAAElFTkSuQmCC), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveDownIcon span {
   display: none;
@@ -182,7 +197,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #7c0605, #5a0404);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #7c0605, #5a0404);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveRight.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABfSURBVBjTrc6xDYAwEAPAgERDzxJMwQgp3vswSsrIU6ZK4pci9AWurrKd0ley2CY3DB7A030BWWxiBGyrHu3XXffH/fwrRVwndw6e5Nt9k0VcxQy4rnq0X3fdH/czngZ7VSH3ywPZ4wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wMS0yOFQwMDo0MzoxMCswMTowMG7FiKUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDEtMjhUMDA6NDM6MTArMDE6MDAfmDAZAAAAAElFTkSuQmCC), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveRightIcon:hover {
   background-color: #c01614;
@@ -198,7 +213,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #c01614, #a01211);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveRight.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABfSURBVBjTrc6xDYAwEAPAgERDzxJMwQgp3vswSsrIU6ZK4pci9AWurrKd0ley2CY3DB7A030BWWxiBGyrHu3XXffH/fwrRVwndw6e5Nt9k0VcxQy4rnq0X3fdH/czngZ7VSH3ywPZ4wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wMS0yOFQwMDo0MzoxMCswMTowMG7FiKUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDEtMjhUMDA6NDM6MTArMDE6MDAfmDAZAAAAAElFTkSuQmCC), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveRightIcon:active {
   background-color: #5d0504;
@@ -216,7 +231,7 @@
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -ms-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), -o-linear-gradient(top, #5d0504, #3b0302);
   background-image: url("http://cdn.speedrunslive.com/images/grunge_button.png"), linear-gradient(to bottom, #5d0504, #3b0302);
-  background-image: url('http://cdn.speedrunslive.com/images/icon_moveRight.png'), url('http://cdn.speedrunslive.com/images/grunge_button.png');
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAgMAAAC4rSHIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAD34lj////X51WBAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABfSURBVBjTrc6xDYAwEAPAgERDzxJMwQgp3vswSsrIU6ZK4pci9AWurrKd0ley2CY3DB7A030BWWxiBGyrHu3XXffH/fwrRVwndw6e5Nt9k0VcxQy4rnq0X3fdH/czngZ7VSH3ywPZ4wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wMS0yOFQwMDo0MzoxMCswMTowMG7FiKUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDEtMjhUMDA6NDM6MTArMDE6MDAfmDAZAAAAAElFTkSuQmCC), url('http://cdn.speedrunslive.com/images/grunge_button.png');
 }
 .moveRightIcon span {
   display: none;
