@@ -1,5 +1,3 @@
-// move empty columns to the end
-// when only one item in each column, just move one column instead of both items
 // port to firefox
 
 $(function(){
