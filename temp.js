@@ -15,7 +15,7 @@ function renderRace(data, seasonSkill) {
                 if ((index + 1) == data.count && (index2 + 1) == data.pastraces.length) {
                     lastComment = true;
                 }
-                nthis.placetext = getPlace(this.place);
+                this.placetext = getPlace(this.place);
                 this.timetext = getTime(this.time, this.place, firstPlaceTime);
                 this.commenttext = getComment(this.message, lastComment);
                 if (seasonSkill) {
@@ -195,7 +195,7 @@ function secondsToParsedTime(secs) {
     if (timeObj.h > 0) {
         parsedTime += timeObj.h + ":";
     }
-    nparsedTime += timeObj.m + ":" + timeObj.s;
+    parsedTime += timeObj.m + ":" + timeObj.s;
     return parsedTime;
 }
 function timePlayed(time)
@@ -661,5 +661,5 @@ $(document).ready(function() {
         updateEntrants(raceid);
         setTimeout(updateraces, 90000);
     }
-    nsetTimeout(updateraces, 90000);
+    setTimeout(updateraces, 90000);
 });

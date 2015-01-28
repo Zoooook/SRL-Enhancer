@@ -57,22 +57,46 @@ $(function(){
                                                           +"<td class=\"ls_icons\"><a class=\"moveButtonSpacer\"></a></td>");
     $(".ls_namebar tr:nth-child(1)").after("<tr><td><div class=\"ls_belowName\" style=\"display:none\"></div></td></tr>");
 
-    var $streams = $(".ls_streams");
-    var streamsWidth = $streams.width();
+    var streamsWidth = $(".ls_streams").width();
     var numStreams = $(".ls_streams .liquidstream").length;
-
     setInterval(function () {
         if(numStreams != $(".ls_streams .liquidstream").length){
             numStreams = $(".ls_streams .liquidstream").length;
-            streamsWidth = $streams.width();
+            streamsWidth = $(".ls_streams").width();
             moveButtonsToCorrectRow(true);
-        }else if(streamsWidth != $streams.width()){
-            streamsWidth = $streams.width();
+            moveEmptyColumnsToEnd();
+        }else if(streamsWidth != $(".ls_streams").width()){
+            streamsWidth = $(".ls_streams").width();
             moveButtonsToCorrectRow();
         }
     }, 200);
 });
 
+function moveEmptyColumnsToEnd(){
+    var empties=[];
+    var sandwiched=[];
+    var numColumns=$(".ls_streams .ls_column").length;
+    for(var i=1;i<=numColumns;++i){
+        if($("#column"+i+ " .liquidstream").length==0)
+            empties.push(i);
+        else
+            sandwiched=[].concat(empties);
+    }
+    for(var i=0;i<sandwiched.length;++i)
+        $("#column"+sandwiched[i]).attr("id","sandwiched"+i);
+    var j=sandwiched[0];
+    for(var i=j+1;i<=numColumns;++i){
+        if(sandwiched.indexOf(i)==-1){
+            $("#column"+i).attr("id","column"+j);
+            ++j;
+        }
+    }
+    for(var i=0;i<sandwiched.length;++i){
+        $("#sandwiched"+i).appendTo(".ls_streams");
+        $("#sandwiched"+i).attr("id","column"+j);
+        ++j;
+    }
+}
 
 function moveButtonsToCorrectRow(thorough){
     var maxWidth=0;

@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "SRL Enhancer",
-    "description": "Does stuff",
+    "description": "Adds functionality to speedrunslive.com races",
     "version": "1.0",
     "content_scripts": [{
       "matches": ["http://www.speedrunslive.com/race/*","https://www.speedrunslive.com/race/*"],
