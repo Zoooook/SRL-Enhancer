@@ -1,4 +1,3 @@
-// float icons so they drop to 2nd level
 // move empty columns to the end
 // when only one item in each column, just move one column instead of both items
 // port to firefox
@@ -51,15 +50,12 @@ $(function(){
                                     +"</script>");
 
     $(".ls_name").parent().attr('colspan',2);
-
     $(".ls_namebar tr:nth-child(1) td:nth-child(1)").after("<td class=\"ls_icons\"><a class=\"moveLeftIcon\" title=\"Move stream left\"><span>[moveLeft]</span></a></td>"
                                                           +"<td class=\"ls_icons\"><a class=\"moveUpIcon\" title=\"Move stream up\"><span>[moveUp]</span></a></td>"
                                                           +"<td class=\"ls_icons\"><a class=\"moveDownIcon\" title=\"Move stream down\"><span>[moveDown]</span></a></td>"
                                                           +"<td class=\"ls_icons\"><a class=\"moveRightIcon\" title=\"Move stream right\"><span>[moveRight]</span></a></td>"
                                                           +"<td class=\"ls_icons\"><a class=\"moveButtonSpacer\"></a></td>");
     $(".ls_namebar tr:nth-child(1)").after("<tr><td><div class=\"ls_belowName\" style=\"display:none\"></div></td></tr>");
-
-
 
     var $streams = $(".ls_streams");
     var streamsWidth = $streams.width();
@@ -132,12 +128,7 @@ function moveButtonsToTopRow(){
             $(this).parent().after("<td class=\"ls_icons\"><a class=\"moveButtonSpacer\"></a></td>")
         }
     });
-    $(".moveButtonSpacer").each(function(){
-        if($(this).parent().parent().is(":nth-child(2)"))
-            $(this).parent().insertBefore($(this).parent().parent().siblings(":nth-child(1)").children(":nth-last-child(3)"));
-    });
     $(".ls_belowName").hide();
-    $(".moveButtonSpacer").show();
 }
 
 function streamsPerRow(num){
