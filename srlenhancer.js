@@ -57,6 +57,18 @@ $(function(){
                                                           +"<td class=\"ls_icons\"><a class=\"moveButtonSpacer\"></a></td>");
     $(".ls_namebar tr:nth-child(1)").after("<tr><td><div class=\"ls_belowName\" style=\"display:none\"></div></td></tr>");
 
+    $(".ls_streams").on('click', 'a.moveUpIcon', function(){
+        var $thisStream = $(this).parents(".liquidstream");
+        if($thisStream.prev().length)
+            $thisStream.insertBefore($thisStream.prev());
+    });
+
+    $(".ls_streams").on('click', 'a.moveDownIcon', function(){
+        var $thisStream = $(this).parents(".liquidstream");
+        if($thisStream.next().length)
+            $thisStream.insertAfter($thisStream.next());
+    });
+
     var streamsWidth = $(".ls_streams").width();
     var numStreams = $(".ls_streams .liquidstream").length;
     setInterval(function () {
