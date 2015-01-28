@@ -69,6 +69,61 @@ $(function(){
             $thisStream.insertAfter($thisStream.next());
     });
 
+    $(".ls_streams").on('click', 'a.moveLeftIcon', function(){
+        var $thisStream = $(this).parents(".liquidstream");
+        var $thisColumn = $thisStream.parent();
+        if($thisColumn.prev().length){
+            var $leftColumn = $thisColumn.prev();
+            if($thisColumn.children(".liquidstream").length==1 && $leftColumn.children(".liquidstream").length==1){
+                var swapId = $thisColumn.attr("id");
+                $thisColumn.attr("id",$leftColumn.attr("id"));
+                $leftColumn.attr("id",swapId);
+                $thisColumn.insertBefore($leftColumn);
+            }else if($thisStream.index()>=$leftColumn.children(".liquidstream").length)
+                $thisStream.appendTo($leftColumn);
+            else{
+                var streamIndex = $thisStream.index();
+                var $leftStream = $leftColumn.children(".liquidstream:nth-child("+(streamIndex+1)+")");
+                if(streamIndex){
+                    $thisStream.insertAfter($leftColumn.children(".liquidstream:nth-child("+streamIndex+")"));
+                    $leftStream.insertAfter($thisColumn.children(".liquidstream:nth-child("+streamIndex+")"));
+                }else{
+                    $thisStream.prependTo($leftColumn);
+                    $leftStream.prependTo($thisColumn);
+                }
+            }
+        }
+    });
+
+    $(".ls_streams").on('click', 'a.moveRightIcon', function(){
+        var $thisStream = $(this).parents(".liquidstream");
+        var $thisColumn = $thisStream.parent();
+        if($thisColumn.next().length){
+            var $rightColumn = $thisColumn.next();
+            if($rightColumn.children(".liquidstream").length==0){
+                if($thisColumn.children(".liquidstream").length>1)
+                    $thisStream.appendTo($rightColumn);
+            }else if($thisColumn.children(".liquidstream").length==1 && $rightColumn.children(".liquidstream").length==1){
+                var swapId = $thisColumn.attr("id");
+                $thisColumn.attr("id",$rightColumn.attr("id"));
+                $rightColumn.attr("id",swapId);
+                $thisColumn.insertAfter($rightColumn);
+            }else if($thisStream.index()>=$rightColumn.children(".liquidstream").length)
+                $thisStream.appendTo($rightColumn);
+            else{
+                var streamIndex = $thisStream.index();
+                var $rightStream = $rightColumn.children(".liquidstream:nth-child("+(streamIndex+1)+")");
+                if(streamIndex){
+                    $thisStream.insertAfter($rightColumn.children(".liquidstream:nth-child("+streamIndex+")"));
+                    $rightStream.insertAfter($thisColumn.children(".liquidstream:nth-child("+streamIndex+")"));
+                }else{
+                    $thisStream.prependTo($rightColumn);
+                    $rightStream.prependTo($thisColumn);
+                }
+            }
+        }
+    });
+
     var streamsWidth = $(".ls_streams").width();
     var numStreams = $(".ls_streams .liquidstream").length;
     setInterval(function () {
@@ -94,19 +149,21 @@ function moveEmptyColumnsToEnd(){
         else
             sandwiched=[].concat(empties);
     }
-    for(var i=0;i<sandwiched.length;++i)
-        $("#column"+sandwiched[i]).attr("id","sandwiched"+i);
-    var j=sandwiched[0];
-    for(var i=j+1;i<=numColumns;++i){
-        if(sandwiched.indexOf(i)==-1){
-            $("#column"+i).attr("id","column"+j);
+    if(sandwiched.length){
+        for(var i=0;i<sandwiched.length;++i)
+            $("#column"+sandwiched[i]).attr("id","sandwiched"+i);
+        var j=sandwiched[0];
+        for(var i=j+1;i<=numColumns;++i){
+            if(sandwiched.indexOf(i)==-1){
+                $("#column"+i).attr("id","column"+j);
+                ++j;
+            }
+        }
+        for(var i=0;i<sandwiched.length;++i){
+            $("#sandwiched"+i).appendTo(".ls_streams");
+            $("#sandwiched"+i).attr("id","column"+j);
             ++j;
         }
-    }
-    for(var i=0;i<sandwiched.length;++i){
-        $("#sandwiched"+i).appendTo(".ls_streams");
-        $("#sandwiched"+i).attr("id","column"+j);
-        ++j;
     }
 }
 
