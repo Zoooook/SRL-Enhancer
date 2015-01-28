@@ -1,5 +1,3 @@
-// port to firefox
-
 $(function(){
     $("#ls_sidebar").append("<div id=\"ls_morecontrols\"></div>");
     $("#ls_sidebar").append("<div id=\"ls_extracontrols\" style=\"width:50%;margin-left:auto;margin-right:auto\"></div>");
